@@ -1,9 +1,9 @@
 exports.allAccess = (req, res) => {
-  res.status(200).send("Public Content.");
+  res.status(200).send("Welcome to zeLibrary.");
 };
 
 exports.userBoard = (req, res) => {
-  res.status(200).send("User Content.");
+  res.status(200).send("User's content: bookSearch/bookShelf.");
 };
 
 exports.adminBoard = (req, res) => {
