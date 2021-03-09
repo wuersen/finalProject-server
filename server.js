@@ -5,7 +5,7 @@ const cors = require("cors");
 const app = express();
 
 var corsOptions = {
-  origin: "http://localhost:3001"
+  origin: "http://localhost:8081"
 };
 
 app.use(cors(corsOptions));
@@ -42,7 +42,7 @@ const db = require("./app/models");
 const Role = db.role;
 
 db.mongoose
-  .connect(`mongodb+srv://wuersen:19821021523Wes@library0.bcnfu.mongodb.net/library0?retryWrites=true&w=majority`, {
+  .connect(`mongodb+srv://Zibrary:chicken12@cluster0.qvf0p.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`, {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
