@@ -7,7 +7,10 @@ db.mongoose = mongoose;
 
 db.user = require("./user.model");
 db.role = require("./role.model");
-db.books = require("./bookModel")
+db.books = require("./bookModel");
+db.shelfs = require("./shelfModel");
+db.reviews = require("./reviewModel");
+db.notes = require("./noteModel")
 
 
 db.ROLES = ["user", "admin", "moderator"];

@@ -1,4 +1,4 @@
-const bookBuilder = require('../controllers/bookController');
+const bookBuilder = require('../controllers/booksController');
 
 module.exports = (app) => {
  app.route('/books')

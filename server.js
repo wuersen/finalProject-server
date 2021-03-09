@@ -5,7 +5,7 @@ const cors = require("cors");
 const app = express();
 
 var corsOptions = {
-  origin: "http://localhost:8081"
+  origin: "http://localhost:3001"
 };
 
 app.use(cors(corsOptions));
@@ -25,6 +25,11 @@ app.get("/", (req, res) => {
 require('./app/routes/auth.routes')(app);
 require('./app/routes/user.routes')(app);
 require('./app/routes/bookRoutes') (app);
+require('./app/routes/shelfRoutes') (app);
+require('./app/routes/reviewRoutes') (app);
+require('./app/routes/noteRoutes') (app);
+
+
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
